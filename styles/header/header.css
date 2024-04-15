@@ -1,0 +1,91 @@
+@charset "UTF-8";
+.freeship {
+  z-index: 1000;
+}
+.freeship .freeship__text {
+  font-size: 0.9rem;
+}
+
+.menu {
+  z-index: 999;
+  border: 1px solid;
+  background-color: #fefbf4;
+  border-color: rgb(237, 224, 204);
+}
+.menu .menu__content {
+  width: 95%;
+  margin: auto;
+}
+.menu .menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.first__slider {
+  background-color: #fff;
+}
+.first__slider .first__slider-content {
+  width: 70%;
+}
+.first__slider h2 {
+  font-size: 3.75rem;
+  letter-spacing: 2px;
+  font-family: Vollkorn;
+}
+.first__slider h3 {
+  font-family: Barlow;
+  letter-spacing: -1px;
+}
+.first__slider h4 {
+  font-family: Barlow;
+}
+.first__slider i {
+  color: #fff;
+}
+
+.view {
+  border-radius: 4px;
+  border: none;
+}
+
+.international {
+  background-color: #fefbf4;
+  border: 1px solid rgb(237, 224, 204);
+}
+.international .international__item {
+  width: 70% !important;
+  margin: auto;
+}
+
+.slick-prev,
+.slick-next {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  background-position: center;
+  background-color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 25px; /* Giả sử bạn muốn padding ở xung quanh icon */
+  font-size: 14px; /* Cài đặt kích thước font chứa icon */
+  width: 3rem;
+  height: 3rem;
+  background-size: 150%; /* Đặt kích thước của background là 150% của phần tử */
+  background-position: center;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+}
+.slick-prev i,
+.slick-next i {
+  color: #fff;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev {
+  left: 1%;
+}/*# sourceMappingURL=header.css.map */

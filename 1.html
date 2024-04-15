@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Slider</title>
+    
+    <img src="./images/haircare.jpg" alt="">
+</head>
+<body>
+    <div class="bestseller__item">
+        <a href="#"><img src="${item.img}" alt="${item.nameproduct}"></a>
+        <a href="#">${item.nameproduct}</a>
+        <span>${item.uses} </span>
+        <span>$ ${item.price}.</span>
+    </div>
+        // JavaScript để thực hiện slider
+        const slider = document.querySelector('.slider');
+        const slides = document.querySelectorAll('.slide');
+        let index = 0;
+
+        // Hàm để di chuyển slider
+        function slide() {
+            index++;
+            if (index === slides.length) {
+                index = 0;
+            }
+            const size = slides[0].clientWidth;
+            slider.querySelector('.slides').style.transform = `translateX(${-size * index}px)`;
+        }
+
+        // Tự động chuyển slide sau một khoảng thời gian
+        setInterval(slide, 5000); // Thay đổi thời gian ở đây nếu bạn muốn
+    
+</body>
+</html>

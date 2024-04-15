@@ -1,0 +1,39 @@
+.wrapper {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fefbf4;
+}
+:root {
+    --pink-color: #ff8080;
+}
+
+.container {
+    width: 80%;
+}
+.carousel-control-prev {
+    left: -65px;
+}
+.carousel-control-next{
+    right: -65px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 5px; /* Giả sử bạn muốn padding ở xung quanh icon */
+    font-size: 14px; /* Cài đặt kích thước font chứa icon */
+    width: 3rem;
+    height: 3rem;
+    background-size: 50%; /* Đặt kích thước của background là 150% của phần tử */
+    background-position: center; 
+}
+.ballow{
+    font-family:Barlow;
+}
+.vollkorn{
+    font-family:Vollkorn ;
+}
+.text-grey{
+    color: rgba(118, 115, 111, var(--tw-text-opacity));
+}
