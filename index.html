@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/3426ec3618.js" crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
@@ -16,42 +16,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./styles/font.css">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="./styles/header/header.css">
     <link rel="stylesheet" href="./styles/bestseller/bestseller.css">
+    <link rel="stylesheet" href="./styles/footer/footer.css">
     <title>Cocoon Vietnam</title>
 </head>
 
 <body>
     <div class="wrapper">
         <!--freeship  -->
-        <div class="freeship d-flex justify-content-sm-center h-auto pt-3 pb-3 bg-dark">
+        <div class="freeship d-flex justify-content-center h-auto pt-3 pb-3 bg-dark">
             <a href="#" class="freeship__text text-light text-decoration-none">Tận hưởng giao hàng miễn phí toàn quốc
                 với hóa đơn từ 99.000đ + </a>
         </div>
         <!-- menu -->
-        <div class="menu d-flex h-auto ">
-            <div class="menu__content d-flex">
-                <ul class="menu__list d-flex justify-content-start align-items-center col-5">
-                    <span class="d-flex justify-content-sm-center align-items-center p-2"><i
-                            class="fa-solid fa-magnifying-glass"></i></span>
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">Sản phẩm</a></li>
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">Khuyến mãi</a></li>
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">Cocoon</a></li>
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">Bài viết</a></li>
-                </ul>
-                <div class="menu__center d-flex justify-content-sm-center align-items-center col-2">
-                    <img src="./images/logo.svg" alt="">
-                </div>
-                <ul class="menu__list d-flex align-items-center col-5 justify-content-end">
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">Đăng nhập</a></li>
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">Liên hệ</a></li>
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">Giỏ hàng</a></li>
-                    <li class="menu__item p-3"><a href="#" class="text-decoration-none text-dark">EN</a></li>
-                </ul>
-            </div>
+        <div class="menu d-flex">
+            <ul class="menu-nav d-flex justify-content-start align-items-center col-5">
+                <span class="d-flex justify-content-center align-items-center p-2"><i
+                        class="fa-solid fa-magnifying-glass"></i></span>
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">Sản
+                        phẩm</a></li>
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">Khuyến
+                        mãi</a></li>
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">Cocoon</a>
+                </li>
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">Bài
+                        viết</a></li>
+            </ul>
+
+            <a class="navbar-brand col-2" href="#"><img src="./images/logo.svg" alt=""></a>
+
+            <ul class="menu-nav d-flex align-items-center col-5 justify-content-end">
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">Đăng
+                        nhập</a></li>
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">Liên hệ</a>
+                </li>
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">Giỏ
+                        hàng</a></li>
+                <li class="menu-item p-3"><a class="text-dark" href="#" class="text-decoration-none text-dark">EN</a></li>
+            </ul>
+
         </div>
         <!-- banner -->
         <div class="banner">
@@ -84,24 +92,24 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="first__slider d-flex align-items-center w-100 h-auto">
+                        <div class="first__slider d-flex align-items-center w-100 h-auto bg-banner">
                             <div class="first__slider-left w-50 h-auto">
-                                <img class="img-fluid" src="./images/0_Homepage_5d430a0bd1.jpg" alt="">
+                                <img class="img-fluid" src="./images/bannervochai.jpg" alt="">
                             </div>
                             <div class="first__slider-right d-flex flex-column w-50 h-100">
                                 <div class="first__slider-content m-auto pt-3 pb-3">
-                                    <h3 class="text-uppercase fw-normal lh-1 mt-3 ballow">Mua 1 tặng 1</h3>
-                                    <h2 class="mt-2 vollkorn"> Chiến thắng giải thưởng sản phẩm làm sạch tốt nhất </h2>
-                                    <p class="fw-lighter mt-2">Nhân dịp Nước Tẩy Trang Bí Đao chiến thắng giải thưởng
-                                        "Sản phẩm làm sạch da tốt nhất" tại lễ trao giải Elle Beauty Awards 2024 và để
-                                        lan tỏa niềm vui này cũng như thay lời cảm ơn đến những khách hàng đã luôn yêu
-                                        thương và đồng hành, chúng tôi mang đến chương trình ưu đãi hấp dẫn áp dụng từ
-                                        7-11/4.</p>
+                                    <h3 class="text-uppercase fw-normal lh-1 mt-3 ballow">
+                                        Đổi vỏ chai online
+                                    </h3>
+                                    <h2 class="mt-2 vollkorn"> Cùng Cocoon sống xanh mỗi ngày </h2>
+                                    <p class="fw-lighter mt-2">Cocoon luôn sẵn sàng nhận vỏ chai cũ từ các bạn và trao
+                                        đi các sản phẩm mới. Dù bạn ở bất cứ nơi đâu tại Việt Nam hãy cùng tham gia đổi
+                                        vỏ chai với Cocoon nhé.</p>
                                     <a href="#" class="text-light text-decoration-none mt-3">
                                         <button
-                                            class="d-flex justify-content-between align-items-center w-100 bg-dark p-3">
-                                            <h4 class="m-0 text-light text-uppercase fw-normal lh-1">xem ngay</h4>
-                                            <i class="fa-solid fa-arrow-right"></i>
+                                            class="d-flex justify-content-between align-items-center w-100 bg-light view p-3">
+                                            <h4 class="m-0 text-dark text-uppercase fw-normal lh-1">XEM THÊM </h4>
+                                            <i class="fa-solid fa-arrow-right text-dark"></i>
                                         </button>
                                     </a>
                                 </div>
@@ -124,7 +132,7 @@
                                         7-11/4.</p>
                                     <a href="#" class="text-light text-decoration-none mt-3 gap-3">
                                         <button
-                                            class="d-flex justify-content-between align-items-center w-100 bg-dark p-3">
+                                            class="d-flex justify-content-between align-items-center w-100 bg-dark p-3 view">
                                             <h4 class="m-0 text-light text-uppercase fw-normal lh-1">xem ngay</h4>
                                             <i class="fa-solid fa-arrow-right"></i>
                                         </button>
@@ -145,36 +153,88 @@
                     </button>
                 </div>
             </div>
-
         </div>
-        <!-- international -->
-        <div class="international pt-5 pb-5">
-            <h2 class="text-center ballow fw-bold">CHỨNG NHẬN BỞI CÁC TỔ CHỨC QUỐC TẾ</h2>
-            <div class="d-flex pt-3">
-                <div class="international__item d-flex align-items-center flex-column m-3">
-                    <img class="img-fluid" src="./images/cruelty.svg" alt="">
-                    <h2 class="text-center vollkorn">Leaping Bunny</h2>
-                    <h6 class="text-center ballow fw-bolder">CHƯƠNG TRÌNH LEAPING BUNNY</h6>
-                    <p class="text-center text-grey">Chương trình Leaping Bunny của tổ chức Cruelty Free International
-                        được xem là "tiêu chuẩn vàng"
-                        toàn cầu cho các sản phẩm không thử nghiệm trên động vật.</p>
+        <!--sunscreenmilk  -->
+        <div class="sunscreenmilk container d-flex justify-content-between align-items-center w-100 mt-5 mb-5">
+            <div class="name w-75">
+                <h2 class="w-75 vollkorn d-flex justify-content-start" data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">Sữa chống nắng bí đao</h2>
+            </div>
+            <div class="images__product w-100 d-flex justify-content-center align-items-center h-auto"
+                data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                <img class="sun__1" src="./images/bi.png" alt="">
+                <img class="sun__2" src="./images/milk.png" alt="">
+                <img class="sun__3" src="./images/sun.png" alt="">
+            </div>
+            <div class="uses__product w-75 gap-3 me-0 d-flex flex-column" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
+                <p class="w-75 m-auto fs-6 text-grey">Với diện mạo đột phá có hình dáng dẹp dẹp như một lát bí đao, sữa
+                    chống nắng bí đao sẽ là món "trang
+                    sức" nhỏ gọn, tinh tế và không kém phần thời trang mà bạn sẽ luôn mang theo bên mình, bôi lại bất cứ
+                    khi nào cần thiết. Bảo vệ da khỏi tác hại của tia UVB, UVA và HEV với hiệu quả bảo vệ rất cao cùng
+                    finish ráo mịn rất tự nhiên, không bóng, không tạo vệt trắng mất thẩm mỹ.</p>
+
+                <a href="#" class="w-75 m-auto ballow text-uppercase text-dark d-flex gap-3 align-items-center"> <span
+                        class="fs-5">Mua ngay </span> <i class="text-grey fa-solid fa-arrow-right"></i> </a>
+            </div>
+        </div>
+        <!--  -->
+        <!-- brand philosophy -->
+        <div class="brandphilosophy w-100 d-flex justify-content-center align-items-center">
+            <div
+                class="brandphilosophy__content w-50 d-flex justify-content-center align-items-center flex-column m-5 p-5 bg-light">
+                <div class="gap-3 d-flex">
+                    <div class="gap-3 d-flex">
+                        <h2 class="fs-1 vollkorn fst-italic">Triết lý </h2>
+                        <h2 class="fs-1 text-uppercase ballow fw-bold">Thương hiệu</h2>
+                    </div>
                 </div>
-                <div class="international__item d-flex align-items-center flex-column m-3">
-                    <img class="img-fluid" src="./images/vegan.svg" alt="">
-                    <h2 class="text-center vollkorn"> The Vegan Society</h2>
-                    <h6 class="text-center ballow fw-bolder"> HIỆP HỘI THUẦN CHAY QUỐC TẾ</h6>
-                    <p class="text-center text-grey">
-                        The Vegan Society (Hiệp hội thuần chay quốc tế) là một trong những chứng nhận uy tín xác thực
-                        cho các sản phẩm không có thành phần từ động vật và không thử nghiệm trên động vật.</p>
-                </div>
-                <div class="international__item d-flex align-items-center flex-column m-3">
-                    <img class="img-fluid" src="./images/ani.svg" alt="">
-                    <h3 class="text-center vollkorn"> PETA </h3>
-                    <h6 class="text-center ballow fw-bolder"> ANIMAL TEST-FREE & VEGAN</h6>
-                    <p class="text-center text-grey">
-                        Chương trình Beauty Without Bunnies của tổ chức bảo vệ quyền lợi động vật toàn cầu PETA là
-                        chương trình bảo vệ và cam kết không có sự tàn ác đối với động vật uy tín trên thế giới.
-                    </p>
+                <p class="text-grey fs-5 text-center">
+                    Là những người yêu thiên nhiên và đam mê khám phá các nguồn nguyên liệu đặc hữu của Việt Nam, chúng
+                    tôi luôn kiên định với những triết lý trên hành trình tìm vẻ đẹp thật sự của làn da.</p>
+                <a href="#" class="text-light text-decoration-none mt-3 w-75">
+                    <button class="w-100 d-flex justify-content-between align-items-center w-100 view bg-dark p-3">
+                        <h4 class="m-0 text-light text-uppercase fw-normal lh-1">Tìm hiểu thêm</h4>
+                        <i class="text-light fa-solid fa-arrow-right"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <!--  -->
+        <marquee class="fw-bolder">MỸ PHẨM THUẦN CHAY 100% CHO NÉT ĐẸP THUẦN VIỆT</marquee>
+        <!--  -->
+        <div class="container">
+            <!-- international -->
+            <div class="international pt-5 pb-5">
+                <h2 class="text-center ballow fw-bold">CHỨNG NHẬN BỞI CÁC TỔ CHỨC QUỐC TẾ</h2>
+                <div class="d-flex pt-3">
+                    <div class="international__item d-flex align-items-center flex-column m-3">
+                        <img class="img-fluid" src="./images/cruelty.svg" alt="">
+                        <h2 class="text-center vollkorn">Leaping Bunny</h2>
+                        <h6 class="text-center ballow fw-bolder">CHƯƠNG TRÌNH LEAPING BUNNY</h6>
+                        <p class="text-center text-grey">Chương trình Leaping Bunny của tổ chức Cruelty Free
+                            International
+                            được xem là "tiêu chuẩn vàng"
+                            toàn cầu cho các sản phẩm không thử nghiệm trên động vật.</p>
+                    </div>
+                    <div class="international__item d-flex align-items-center flex-column m-3">
+                        <img class="img-fluid" src="./images/vegan.svg" alt="">
+                        <h2 class="text-center vollkorn"> The Vegan Society</h2>
+                        <h6 class="text-center ballow fw-bolder"> HIỆP HỘI THUẦN CHAY QUỐC TẾ</h6>
+                        <p class="text-center text-grey">
+                            The Vegan Society (Hiệp hội thuần chay quốc tế) là một trong những chứng nhận uy tín xác
+                            thực
+                            cho các sản phẩm không có thành phần từ động vật và không thử nghiệm trên động vật.</p>
+                    </div>
+                    <div class="international__item d-flex align-items-center flex-column m-3">
+                        <img class="img-fluid" src="./images/ani.svg" alt="">
+                        <h3 class="text-center vollkorn"> PETA </h3>
+                        <h6 class="text-center ballow fw-bolder"> ANIMAL TEST-FREE & VEGAN</h6>
+                        <p class="text-center text-grey">
+                            Chương trình Beauty Without Bunnies của tổ chức bảo vệ quyền lợi động vật toàn cầu PETA là
+                            chương trình bảo vệ và cam kết không có sự tàn ác đối với động vật uy tín trên thế giới.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,9 +245,13 @@
         <!-- best seller -->
         <div class="bestseller d-flex mt-5 mb-3">
             <div class="bestseller__title">
-                <div class="tit d-flex flex-column gap-5 m-auto mt-5">
-                    <h2 class="mt-5"><i>Sản phẩm </i> <br>bán chạy</h2>
-                    <p class="w-75">Cocoon tự hào khi các sản phẩm mà chúng tôi tạo ra mang đến những thay đổi tuyệt vời
+                <div class="d-flex flex-column gap-5 m-auto mt-5 w-75">
+                    <div class="mt-5 gap-3 d-flex flex-column">
+                        <h2 class="h2-tit vollkorn"><i>Sản phẩm</i> </h2>
+                        <b class="h2-tit text-uppercase ballow">bán chạy</b>
+                    </div>
+                    <p class="w-75 text-grey">Cocoon tự hào khi các sản phẩm mà chúng tôi tạo ra mang đến những thay đổi
+                        tuyệt vời
                         trên làn da, mái
                         tóc của bạn.</p>
                 </div>
@@ -195,39 +259,320 @@
             <ul class="bestseller__list d-flex">
             </ul>
         </div>
-        <!-- banner -->
-        <a href="#" class="mt-5 mb-5">
-            <img class="banner__second img-fluid" src="./images/banner_green_living.jpg" alt="">
-        </a>
-        <!--  -->
-        <div class="bestseller d-flex mt-5 mb-3 flex-row-reverse">
-            <div class="bestseller__title">
-                <div class="tit d-flex flex-column gap-5 m-auto mt-5">
-                    <h2 class="mt-5"><i>Câu chuyện</i> <br>
-                        <h2>NGUYÊN LIỆU</h2>
-                        <span class="w-75">"Hồn Việt trong chai"</span>
-                        <p class="w-75">
-                            Chúng tôi viết nên câu chuyện về hoa trái đặc hữu của Việt Nam, rất gần gũi và quen thuộc từ
-                            tên gọi, mùi hương và cả vùng đất sản sinh ra chúng.</p>
-                            <a href="#" class="text-light text-decoration-none mt-3">
-                                <button
-                                    class="view d-flex justify-content-between align-items-center w-100 bg-light p-3">
-                                    <h4 class="m-0 text-dark text-uppercase fw-normal lh-1">Tìm hiểu thêm</h4>
-                                    <i class="fa-solid fa-arrow-right"></i>
-                                </button>
-                            </a>
+        <div class="container gap-5">
+            <!-- banner -->
+            <a href="#" class="mt-5 mb-5 container">
+                <img class="banner__second img-fluid" src="./images/banner_green_living.jpg" alt="">
+            </a>
+            <!--  -->
+        </div>
+        <!-- -->
+        <div class="bestseller d-flex mt-5 flex-row-reverse">
+            <div class="bestseller__title ms-5">
+                <div class="tit d-flex flex-column gap-3 mt-5">
+                    <div class="gap-3 d-flex flex-column">
+                        <h2 class="h2-tit vollkorn"><i>Câu chuyện</i> </h2>
+                        <b class="h2-tit text-uppercase ballow">Nguyên liệu</b>
+                    </div>
+                    <span class="w-75 text-grey">"Hồn Việt trong chai"</span>
+                    <p class="w-75 text-grey">
+                        Chúng tôi viết nên câu chuyện về hoa trái đặc hữu của Việt Nam, rất gần gũi và quen
+                        thuộc từ
+                        tên gọi, mùi hương và cả vùng đất sản sinh ra chúng.</p>
+                    <a href="#" class="text-light text-decoration-none mt-3">
+                        <button class="d-flex justify-content-between align-items-center w-100 btn-view p-3">
+                            <h4 class="m-0 text-dark text-uppercase fw-normal lh-1">Tìm hiểu thêm</h4>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </a>
                 </div>
             </div>
             <ul class="ingredientstory__list d-flex">
             </ul>
         </div>
+
+        <div class="container">
+            <!-- new post -->
+            <div class="newpost mt-5">
+                <div class="newpost__top d-flex justify-content-between align-items-center">
+                    <h2 class="h2-tit vollkorn"> <i>Bài viết mới nhất</i></h2>
+                    <a href="#" class="text-light text-decoration-none w-50">
+                        <button class="d-flex justify-content-between align-items-center w-100 btn-view p-3">
+                            <h4 class="m-0 text-dark text-uppercase fw-normal lh-1">tất cả bài viết</h4>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="newpost__content d-flex gap-5 mt-3">
+                    <div class="newpost__content-item d-flex gap-3 flex-column">
+                        <img class="img-fluid" src="./images/newpost1.jpg" alt="">
+                        <span class="date">Cocoon | <span class="ballow fs-6 text orange"> 26.03.24</span></span>
+                        <div class="newpost__title vollkorn fs-4 text">Cocoon x Guardian Vietnam: ra mắt 20 trạm refill
+                            tại TP.HCM </div>
+                        <p class="text-grey">
+                            Trạm Refill là chương trình nhằm giúp giảm tải số lượng vỏ chai nhựa cũ thải ra ngoài môi
+                            trường
+                            của Cocoon và Guardian Vietnam. Hiện tại, chương trình đang triển khai tại 20 trạm tại khu
+                            vực
+                            HCM, áp dụng refill với 2 sản phẩm là: Dầu Gội Bưởi và Gel Tắm Bí Đao
+                        </p>
+                    </div>
+                    <div class="newpost__content-item d-flex gap-3 flex-column">
+                        <img class="img-fluid" src="./images/newpost1.jpg" alt="">
+                        <span class="date">Cocoon | <span class="ballow fs-6 text orange"> 26.03.24</span></span>
+                        <div class="newpost__title vollkorn fs-4 text">Cocoon x Guardian Vietnam: ra mắt 20 trạm refill
+                            tại TP.HCM </div>
+                        <p class="text-grey">
+                            Trạm Refill là chương trình nhằm giúp giảm tải số lượng vỏ chai nhựa cũ thải ra ngoài môi
+                            trường
+                            của Cocoon và Guardian Vietnam. Hiện tại, chương trình đang triển khai tại 20 trạm tại khu
+                            vực
+                            HCM, áp dụng refill với 2 sản phẩm là: Dầu Gội Bưởi và Gel Tắm Bí Đao
+                        </p>
+                    </div>
+                    <div class="newpost__content-item d-flex gap-3 flex-column">
+                        <img class="img-fluid" src="./images/newpost1.jpg" alt="">
+                        <span class="date">Cocoon | <span class="ballow fs-6 text orange"> 26.03.24</span></span>
+                        <div class="newpost__title vollkorn fs-4 text">Cocoon x Guardian Vietnam: ra mắt 20 trạm refill
+                            tại TP.HCM </div>
+                        <p class="text-grey">
+                            Trạm Refill là chương trình nhằm giúp giảm tải số lượng vỏ chai nhựa cũ thải ra ngoài môi
+                            trường
+                            của Cocoon và Guardian Vietnam. Hiện tại, chương trình đang triển khai tại 20 trạm tại khu
+                            vực
+                            HCM, áp dụng refill với 2 sản phẩm là: Dầu Gội Bưởi và Gel Tắm Bí Đao
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- instagram cocoon -->
+            <div class="instagram__concoon mt-5">
+                <div class="instagram__concoon d-flex justify-content-between align-items-center">
+                    <h2 class="h2-tit vollkorn"> <i>@cocoonvietnam</i></h2>
+                    <a href="#" class="text-light text-decoration-none w-75">
+                        <button class="d-flex justify-content-between align-items-center w-100 btn-view p-3">
+                            <h4 class="m-0 text-dark text-uppercase fw-normal lh-1">theo dõi instagram cocoon</h4>
+                            <i class="fa-brands fa-instagram"></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="instagram__cocoon-content d-flex mt-5">
+                    <a href="#" class="item d-flex col-4">
+                        <div class="card__item">
+                            <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                            <div class="mark-ins d-flex justify-content-center align-items-center">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card__col-2 d-flex flex-column">
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card__col-2 d-flex flex-column">
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card__col-2 d-flex flex-column">
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card__col-2 d-flex flex-column">
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="item d-flex">
+                            <div class="card__item">
+                                <img class="img-fluid w-100" src="./images/ins1.jpg" alt="">
+                                <div class="mark-ins d-flex justify-content-center align-items-center">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+        <!-- reward -->
+        <div class="reward">
+            <div id="carouselExampleInterval" class="carousel slide mt-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <div
+                            class="reward__item d-flex gap-5 flex-column justify-content-center align-items-center w-100 h-auto pt-5 pb-5">
+                            <i class="w-75 text-center fs-1 text orange pt-3 vollkorn"> “Cocoon Vietnam – Từ mầm xanh
+                                làm đẹp đến giải thưởng danh giá
+                                tại ELLE Beauty Awards 2021”
+                            </i>
+                            <span class="text-center text-uppercase fw-bold fs-6 ballow pb-3">elle vietnam</span>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <div
+                            class="reward__item d-flex gap-5 flex-column justify-content-center align-items-center w-100 h-auto pt-5 pb-5">
+                            <i class="w-75 text-center fs-1 text orange pt-3 vollkorn"> “Cocoon Vietnam – Từ mầm xanh
+                                làm đẹp đến giải thưởng danh giá
+                                tại ELLE Beauty Awards 2021”
+                            </i>
+                            <span class="text-center text-uppercase fw-bold fs-6 ballow pb-3">elle vietnam</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer d-flex w-100 h-auto">
+            <div class="footer-img w-50 h-auto h-100">
+                <div class="img__back ">
+                    <img class="w-100 object-cover" height="1080" src="./images/fooderimg.jpg" alt="">
+                </div>
+            </div>
+            <div class="footer__right w-50 h-auto d-flex flex-column">
+                <div class="footer__email m-5 w-75">
+                    <div class="footer__email-content d-flex m-auto flex-column gap-3">
+                        <p class="fs-1 vollkorn text-dark">
+                            Đăng ký để nhận thông tin khuyến mãi sớm nhất từ Cocoon
+                        </p>
+                        <div class="email text-brown d-flex justify-content-between align-items-center">
+                            <input type="email" class="w 100 text-brown" placeholder="Nhập địa chỉ email của bạn">
+                            <i class="text-brown fa-solid fa-arrow-right"></i>
+                        </div>
+                        <i class="text-brown">Đăng ký để nhận thông tin liên lạc về các sản phẩm, dịch vụ, cửa hàng, sự
+                            kiện và các vấn đề đáng
+                            quan tâm của Cocoon.</i>
+                    </div>
+                    <div class="footer__info d-flex flex-wrap mt-5">
+                        <ul class="cocoon__info-item col-6 d-flex flex-column"> <b class="">Đặt hàng & hỗ trợ</b>
+                            <li><a class="text-dark" href="#">Hỏi đáp</a></li>
+                            <li><a class="text-dark" href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a class="text-dark" href="#">Chính sách bán hàng</a></li>
+                            <li><a class="text-dark" href="#">Điều khoản bảo mật</a></li>
+                            <li><a class="text-dark" href="#">Điều kiện chung</a></li>
+                            <li><a class="text-dark" href="#">Liên hệ chúng tôi</a></li>
+                        </ul>
+                        <ul class="cocoon__info-item col-6 d-flex flex-column"> <b class="">Shop</b>
+                            <li><a class="text-dark" href="#">Sản phẩm mới</a></li>
+                            <li><a class="text-dark" href="#">Chăm sóc da</a></li>
+                            <li><a class="text-dark" href="#">Chăm sóc tóc</a></li>
+                            <li><a class="text-dark" href="#">Tắm & dưỡng thể </a></li>
+                            <li><a class="text-dark" href="#">Dưỡng môi</a></li>
+                            <li><a class="text-dark" href="#">Combo / Bộ sản phẩm</a></li>
+                        </ul>
+                        <ul class="cocoon__info-item col-6 d-flex flex-column"> <b class="">Về Cocoon</b>
+                            <li><a class="text-dark" href="#">Câu chuyện thương hiệu</a></li>
+                            <li><a class="text-dark" href="#">Giá trị cốt lõi </a></li>
+                            <li><a class="text-dark" href="#">Trách nhiệm cộng đồng</a></li>
+                            <li><a class="text-dark" href="#">Tìm hiểu nguyên liệu</a></li>
+                        </ul>
+                        <ul class="cocoon__info-item col-6 d-flex flex-column"> <b class="">Mạng xã hội </b>
+                            <li class="d-flex align-items-center"><a class="text-dark me-3" href="#">Facebook</a> <i
+                                    class="rotate-45 text-grey fa-solid fa-arrow-right"></i></li>
+                            <li class="d-flex align-items-center"><a class="text-dark me-3" href="#">Instagram</a> <i
+                                    class="rotate-45 text-grey fa-solid fa-arrow-right"></i></li>
+                            <li class="d-flex align-items-center"><a class="text-dark me-3" href="#">Youtube</a> <i
+                                    class="rotate-45 text-grey fa-solid fa-arrow-right"></i></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="cocoon__address bg-dark w-100 d-flex flex-column">
+                    <div class="d-flex flex-column m-3">
+                        <b class="mb-3 text-yellow fw-bold leading-5 ballow">WEBSITE THUỘC QUYỀN CÔNG TY CỔ PHẦN Y&B</b>
+                        <span class="text-yellow BarlowCondensed">GCNĐKKD: 0315803699 | SỞ KẾ HOẠCH VÀ ĐẦU TƯ TP. HỒ CHÍ
+                            MINH CẤP LẦN ĐẦU NGÀY 22/07/2019</span>
+                        <span class="text-yellow BarlowCondensed">14D1, KHU PHỐ 1A, ĐƯỜNG QUỐC LỘ 1A, PHƯỜNG TÂN THỚI
+                            HIỆP, QUẬN 12, TP. HỒ CHÍ MINH, VIỆT NAM</span>
+                        <span class="text-yellow BarlowCondensed">ĐIỆN THOẠI: <a a class="text-yellow BarlowCondensed"
+                                href="19009300"></a> – EMAIL: <a class="text-yellow BarlowCondensed"
+                                href="#">WE@COCOONVIETNAM.COM</a></span>
+                    </div>
+                    <div class="d-flex flex-column m-3">
+                        <b class="mb-3 text-yellow fw-bold leading-5 ballow">SẢN XUẤT VÀ CHỊU TRÁCH NHIỆM VỀ HÀNG HOÁ
+                            CÔNG TY TNHH NATURE STORY</b>
+                        <span class="text-yellow BarlowCondensed">GCNĐKKD: 1101983767 / SỞ KẾ HOẠCH VÀ ĐẦU TƯ TỈNH LONG
+                            AN CẤP LẦN ĐẦU NGÀY: 15/04/2021</span>
+                        <span class="text-yellow BarlowCondensed">LÔ LF24A-LF25 ĐƯỜNG SỐ 2, KHU CÔNG NGHIỆP XUYÊN Á, XÃ
+                            MỸ HẠNH BẮC, HUYỆN ĐỨC HÒA, TỈNH LONG AN, VIỆT NAM</span>
+                        <span class="text-yellow BarlowCondensed">ĐIỆN THOẠI: <a class="text-yellow BarlowCondensed"
+                                href="#">19009300</a> – EMAIL: <a a class="text-yellow BarlowCondensed"
+                                href="#">WE@COCOONVIETNAM.COM</a></span>
+                        <img class="mt-3 h-auto" src="./images/bocongthuong.png" alt="">
+                    </div>
+                    <div class="line w-75 "></div>
+                    <span class="bycocoon pt-3 pb-3 text-grey ballow">© 2024 Cocoon Vietnam. All rights reserved.</span>
+                </div>
+            </div>
+        </div>
         <!--  -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script src="bestseller__list.js"></script>
-        <script src="ingredientstory.js"></script>
+    </div>
+    <!--  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="bestseller__list.js"></script>
+    <script src="ingredientstory.js"></script>
 </body>
 
 </html>

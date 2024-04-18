@@ -54,7 +54,7 @@ const renderBestSellerItem = (params) => {
             <a href="#"><img class="img-fluid h-auto" src="${item.img}" alt="${item.nameproduct}"></a>
             <div class="bestseller__item-cart d-flex justify-content-between align-items-center">
             <div class="name__product d-flex flex-column gap-2">
-            <a href="#" class="text-decoration-none text-dark fs-6 text">${item.nameproduct}</a>
+            <a href="#" class="text-decoration-none text-dark fw-500 fs-6 text">${item.nameproduct}</a>
             <span class="text-uppercase fw-normal ballow fs-6 text">${item.uses} </span>
             <span class="ballow fs-6 text">${item.price}.</span> </div>
             <div class="cart">

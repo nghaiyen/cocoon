@@ -3,21 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #fefbf4;
-}
-:root {
-    --pink-color: #ff8080;
-}
-
-.container {
-    width: 80%;
+    overflow: hidden;
+    max-width: 1320px;
 }
 .carousel-control-prev {
     left: -65px;
 }
-.carousel-control-next{
+.carousel-control-next {
     right: -65px;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     background-color: black;
     border: none;
     border-radius: 4px;
@@ -26,14 +22,118 @@
     width: 3rem;
     height: 3rem;
     background-size: 50%; /* Đặt kích thước của background là 150% của phần tử */
-    background-position: center; 
+    background-position: center;
 }
-.ballow{
-    font-family:Barlow;
+.ballow {
+    font-family: Barlow;
 }
-.vollkorn{
-    font-family:Vollkorn ;
+.vollkorn {
+    font-family: Vollkorn;
 }
-.text-grey{
-    color: rgba(118, 115, 111, var(--tw-text-opacity));
+.BarlowCondensed{
+    font-family:BarlowCondensed;
+}
+.text-grey {
+    --tw-text-opacity: 1;
+    color: rgba(151, 149, 143, var(--tw-text-opacity));
+}
+.text-brown{
+    color: rgb(204, 180, 143)
+}
+.text-yellow{
+    color: rgba(197, 162, 93)
+}
+.fw-500 {
+    font-weight: 500;
+}
+.btn-view {
+    border: 1px solid rgb(237, 224, 204) !important;
+    border-radius: 4px;
+    background-color: #fefbf4;
+    letter-spacing: -1px;
+}
+.orange {
+    --tw-text-opacity: 1;
+    color: rgba(197, 162, 93, var(--tw-text-opacity));
+    letter-spacing: -1px;
+}
+.fa-brands {
+    font-size: 25px;
+}
+.instagram__cocoon-content {
+    > .item:nth-child(1) {
+        margin-bottom: 20px;
+    }
+    a {
+        text-decoration: none;
+        .card__item {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            img {
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 41;
+                width: 100% !important;
+                height: 100% !important;
+                border-radius: 8px;
+            }
+            .mark-ins {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 40;
+                background-color: #292826;
+                opacity: 0;
+                transition: opacity 0.5s ease;
+                z-index: 40;
+                border-radius: 8px;
+                i {
+                    color: #fff !important;
+                    font-size: 2rem;
+                }
+            }
+        }
+        &:hover .card__item .mark-ins {
+            opacity: 0.7; /* Khi hover, opacity tăng lên 1 */
+            z-index: 60;
+        }
+    }
+}
+.item {
+    border-radius: 8px;
+    flex: 0 0 calc(33.33% - 15px);
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.reward{
+    .reward__item{
+        background-color: #fff4ec;
+        i{
+            color: rgba(204, 180, 143)!important;
+            letter-spacing: 0;
+        }
+        .carousel-control-next-icon,
+.carousel-control-prev-icon{
+   background-color: none;
+   opacity: 0;
+}
+    }
+}
+.rotate-45 {
+    transform: rotate(-30deg);
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.bg-banner{
+    background-color: #ede0cc !important
+}
+button{
+    cursor: pointer;
 }

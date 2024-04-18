@@ -4,14 +4,8 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #fefbf4;
-}
-
-:root {
-  --pink-color: #ff8080;
-}
-
-.container {
-  width: 80%;
+  overflow: hidden;
+  max-width: 1320px;
 }
 
 .carousel-control-prev {
@@ -22,7 +16,8 @@
   right: -65px;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   background-color: black;
   border: none;
   border-radius: 4px;
@@ -42,6 +37,120 @@
   font-family: Vollkorn;
 }
 
+.BarlowCondensed {
+  font-family: BarlowCondensed;
+}
+
 .text-grey {
-  color: rgba(118, 115, 111, var(--tw-text-opacity));
+  --tw-text-opacity: 1;
+  color: rgba(151, 149, 143, var(--tw-text-opacity));
+}
+
+.text-brown {
+  color: rgb(204, 180, 143);
+}
+
+.text-yellow {
+  color: rgb(197, 162, 93);
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.btn-view {
+  border: 1px solid rgb(237, 224, 204) !important;
+  border-radius: 4px;
+  background-color: #fefbf4;
+  letter-spacing: -1px;
+}
+
+.orange {
+  --tw-text-opacity: 1;
+  color: rgba(197, 162, 93, var(--tw-text-opacity));
+  letter-spacing: -1px;
+}
+
+.fa-brands {
+  font-size: 25px;
+}
+
+.instagram__cocoon-content > .item:nth-child(1) {
+  margin-bottom: 20px;
+}
+.instagram__cocoon-content a {
+  text-decoration: none;
+}
+.instagram__cocoon-content a .card__item {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+.instagram__cocoon-content a .card__item img {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 41;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 8px;
+}
+.instagram__cocoon-content a .card__item .mark-ins {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  background-color: #292826;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 40;
+  border-radius: 8px;
+}
+.instagram__cocoon-content a .card__item .mark-ins i {
+  color: #fff !important;
+  font-size: 2rem;
+}
+.instagram__cocoon-content a:hover .card__item .mark-ins {
+  opacity: 0.7; /* Khi hover, opacity tăng lên 1 */
+  z-index: 60;
+}
+
+.item {
+  border-radius: 8px;
+  flex: 0 0 calc(33.33% - 15px);
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.reward .reward__item {
+  background-color: #fff4ec;
+}
+.reward .reward__item i {
+  color: rgb(204, 180, 143) !important;
+  letter-spacing: 0;
+}
+.reward .reward__item .carousel-control-next-icon,
+.reward .reward__item .carousel-control-prev-icon {
+  background-color: none;
+  opacity: 0;
+}
+
+.rotate-45 {
+  transform: rotate(-30deg);
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bg-banner {
+  background-color: #ede0cc !important;
+}
+
+button {
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

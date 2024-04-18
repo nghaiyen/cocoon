@@ -1,0 +1,53 @@
+.footer__email-content {
+    width: 80%;
+    .email {
+        padding-bottom: 3%;
+        border-bottom: 1px solid rgb(204, 180, 143);
+    }
+    input {
+        width: 75%;
+        border: none;
+        background-color: #fefbf4;
+        margin-left: 0px;
+    }
+    ::placeholder {
+        color: rgb(204, 180, 143);
+        font-family: Barlow;
+    }
+    :focus {
+        outline: none; /* Ẩn border và đường viền */
+    }
+}
+
+.footer__info {
+    a {
+        text-decoration: none;
+        font-size: 0.875rem;
+    }
+    li {
+        list-style: none;
+    }
+    .cocoon__info-item:nth-child(4) {
+        line-height: 25px;
+    }
+}
+.cocoon__address {
+    img {
+        width: 20%;
+    }
+    .line {
+        height: 1px;
+        background-color: #474242;
+    }
+    a,
+    span {
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+.bycocoon {
+    margin-left: 16px;
+}

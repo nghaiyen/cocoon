@@ -1,36 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video Slider</title>
-    
-    <img src="./images/haircare.jpg" alt="">
-</head>
-<body>
-    <div class="bestseller__item">
-        <a href="#"><img src="${item.img}" alt="${item.nameproduct}"></a>
-        <a href="#">${item.nameproduct}</a>
-        <span>${item.uses} </span>
-        <span>$ ${item.price}.</span>
+`
+<li class="bestseller__item col-3 d-flex flex-column align-items-center justify-content-center">
+    <a href="#"><img class="img-fluid h-auto" src="${item.img}" alt="${item.nameproduct}"></a>
+    <div class="bestseller__item-cart d-flex justify-content-between align-items-center">
+        <div class="name__product d-flex flex-column gap-2">
+            <a href="#" class="text-decoration-none text-dark fs-6 text">${item.nameproduct}</a>
+        </div>
     </div>
-        // JavaScript để thực hiện slider
-        const slider = document.querySelector('.slider');
-        const slides = document.querySelectorAll('.slide');
-        let index = 0;
-
-        // Hàm để di chuyển slider
-        function slide() {
-            index++;
-            if (index === slides.length) {
-                index = 0;
-            }
-            const size = slides[0].clientWidth;
-            slider.querySelector('.slides').style.transform = `translateX(${-size * index}px)`;
-        }
-
-        // Tự động chuyển slide sau một khoảng thời gian
-        setInterval(slide, 5000); // Thay đổi thời gian ở đây nếu bạn muốn
-    
-</body>
-</html>
+</li>
+`

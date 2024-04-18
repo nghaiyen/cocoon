@@ -7,4 +7,8 @@
     font-family:Barlow;
     src: url('font/Barlow-Regular.ttf');
 }
+@font-face {
+    font-family:BarlowCondensed ;
+    src: url('font/BarlowCondensed-ExtraLight.ttf');
+}
 

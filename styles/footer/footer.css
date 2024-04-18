@@ -1,0 +1,56 @@
+@charset "UTF-8";
+.footer__email-content {
+  width: 80%;
+}
+.footer__email-content .email {
+  padding-bottom: 3%;
+  border-bottom: 1px solid rgb(204, 180, 143);
+}
+.footer__email-content input {
+  width: 75%;
+  border: none;
+  background-color: #fefbf4;
+  margin-left: 0px;
+}
+.footer__email-content ::-moz-placeholder {
+  color: rgb(204, 180, 143);
+  font-family: Barlow;
+}
+.footer__email-content ::placeholder {
+  color: rgb(204, 180, 143);
+  font-family: Barlow;
+}
+.footer__email-content :focus {
+  outline: none; /* Ẩn border và đường viền */
+}
+
+.footer__info a {
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+.footer__info li {
+  list-style: none;
+}
+.footer__info .cocoon__info-item:nth-child(4) {
+  line-height: 25px;
+}
+
+.cocoon__address img {
+  width: 20%;
+}
+.cocoon__address .line {
+  height: 1px;
+  background-color: #474242;
+}
+.cocoon__address a,
+.cocoon__address span {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.cocoon__address a {
+  text-decoration: none;
+}
+
+.bycocoon {
+  margin-left: 16px;
+}/*# sourceMappingURL=footer.css.map */

@@ -1,49 +1,57 @@
-.bestseller{
+.bestseller {
     background-color: #fefbf4;
-    a, span {
-        width:95%;
+    a,
+    span {
+        width: 95%;
     }
-    .name__product{
+    .name__product {
         width: 75%;
     }
-    .bestseller__title{
+    .bestseller__title {
         width: 40%;
-        h2{
-            font-size: 4rem;
-            width: 90%;
-        }
-        .tit{
-            width: 80%;
+        .tit {
+            width: 100%;
         }
     }
-    .bestseller__list{
+    .bestseller__list,
+    .ingredientstory__list {
         width: 60%;
         position: relative;
         padding: 0;
-        .bestseller__item{
-           gap:1rem;
+        .bestseller__item {
+            gap: 1rem;
         }
-        .bestseller__item-cart{
+        .bestseller__item-cart {
             width: 95%;
         }
-        .cart{
-            button{
-                border-radius: 4px;
-                border: none;
-                width: 4rem !important;
-                height: 4rem !important;
-                
-            }
-            svg{
-                font-size: 100%;
-            }
-        }
     }
-    
 }
-// 
-.banner__second{
-    width: 80%; /* Thiết lập chiều rộng là 80% */
+.ingredientstory__list {
+    .slick-prev,
+    .slick-next {
+        top:40%
+    }
+}
+//
+.banner__second {
+    width: 90%; /* Thiết lập chiều rộng là 80% */
     display: block; /* Đảm bảo hình ảnh được hiển thị như một khối */
     margin: 0 auto !important;
+}
+.h2-tit {
+    font-size: 3.8rem;
+    width: 90%;
+    letter-spacing: -2px;
+}
+.cart {
+    button {
+        border-radius: 4px;
+        border: none;
+        width: 4rem !important;
+        height: 4rem !important;
+        background-color: #ede0cc;
+    }
+    svg {
+        font-size: 100%;
+    }
 }
